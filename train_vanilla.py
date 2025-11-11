@@ -7,8 +7,12 @@
 #!/usr/bin/env python3
 """
 Training script for vanilla (baseline) models without attention
-Usage: python train_vanilla.py --backbone resnet50 --epochs 25
+Usage: python train_vanilla.py --backbone resnet50, densenet121,efficientnetb0 --epochs 25
 """
+
+from utils.seed import set_all_seeds, set_worker_seeds
+set_all_seeds(42)
+
 import argparse
 import os
 import torch
