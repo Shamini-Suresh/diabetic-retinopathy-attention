@@ -18,6 +18,7 @@ from sklearn.metrics import cohen_kappa_score, f1_score
 from tqdm import tqdm
 import contextlib
 
+from utils.seed import set_worker_seeds #  seed file
 
 def train_kfold(model_class, backbone, device, train_dataset, k_folds=5, epochs=25, 
                 batch_size=16, use_attention=False, attention_reduction=16):
@@ -72,6 +73,7 @@ def train_kfold(model_class, backbone, device, train_dataset, k_folds=5, epochs=
             pin_memory=device.type == 'cuda',
             persistent_workers=True,
             drop_last=True
+            worker_init_fn=set_worker_seeds
         )
 
         val_loader = DataLoader(
@@ -82,6 +84,7 @@ def train_kfold(model_class, backbone, device, train_dataset, k_folds=5, epochs=
             pin_memory=device.type == 'cuda',
             persistent_workers=True,
             drop_last=False
+            worker_init_fn=set_worker_seeds
         )
 
         # Create model
