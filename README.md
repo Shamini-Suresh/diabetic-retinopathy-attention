@@ -20,7 +20,7 @@ Our research reveals architecture-dependent effects of attention mechanisms on d
 Main Contributions
 
 1. First systematic study of attention mechanism effects across multiple CNN architectures for medical imaging. 
-2. Identified architecture-specific incompatibilities**: Attention disrupts ResNet’s residual learning and DenseNet’s dense connections.  
+2. Identified architecture-specific incompatibilities: Attention disrupts ResNet’s residual learning and DenseNet’s dense connections.  
 3. Clinical implications: Attention degrades moderate DR detection (F1: 0.68 → 0.50), the most critical class for intervention.  
 4. Actionable insights: EfficientNet-B0’s compound scaling is naturally compatible with attention mechanisms.  
 
