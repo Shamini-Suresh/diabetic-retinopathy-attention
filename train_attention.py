@@ -9,6 +9,12 @@
 Training script for models WITH attention mechanisms
 Usage: python train_attention.py --backbone resnet50 --epochs 25
 """
+
+from utils.seed import set_all_seeds, set_worker_seeds
+
+# Set seeds before any other imports that might use randomness
+set_all_seeds(42)
+
 import argparse
 import os
 import torch
