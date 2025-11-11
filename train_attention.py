@@ -7,7 +7,7 @@
 #!/usr/bin/env python3
 """
 Training script for models WITH attention mechanisms
-Usage: python train_attention.py --backbone resnet50 --epochs 25
+Usage: python train_attention.py --backbone resnet50, densenet121,efficientnetb0 --epochs 25
 """
 
 from utils.seed import set_all_seeds, set_worker_seeds
