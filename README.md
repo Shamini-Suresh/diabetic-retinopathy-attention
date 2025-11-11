@@ -14,8 +14,8 @@ Our research reveals architecture-dependent effects of attention mechanisms on d
 | Architecture | Baseline κ | With Attention | Change | 95% CI | Significance |
 |--------------|-----------|----------------|--------|--------|--------------|
 | ResNet-50 | 0.8682 | 0.8420 | -3.0% | [0.837, 0.892] vs [0.812, 0.868] | p < 0.05 |
-| DenseNet-121| 0.8397 | 0.8080 | -3.8% | Non-overlapping | p < 0.05 |
-| EfficientNet-B0 | 0.8831 | 0.8890 | +0.7% | [0.855, 0.910] | n.s. |
+| DenseNet-121| 0.8397 | 0.8080 | -3.8% | 0.811, 0.867] vs. [0.777, 0.836] | p < 0.05 |
+| EfficientNet-B0 | 0.8831 | 0.8890 | +0.7% | [0.855, 0.910] vs. [0.861, 0.912] | not significant |
 
 Main Contributions
 
